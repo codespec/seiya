@@ -2,15 +2,40 @@
   "name": "seiya",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1",
-    "react-scripts": "1.0.12"
-  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "@codespec/react-toolset": "^0.0.27",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-scripts": "1.0.12",
+    "autoprefixer": "7.1.2",
+    "babel-core": "6.25.0",
+    "babel-eslint": "7.2.3",
+    "babel-loader": "7.1.1",
+    "babel-preset-react-app": "^3.0.2",
+    "babel-runtime": "6.23.0",
+    "classnames": "^2.2.5",
+    "css-loader": "0.28.4",
+    "node-sass": "^4.5.3",
+    "prop-types": "^15.5.10",
+    "react-dev-utils": "^3.1.0",
+    "react-error-overlay": "^1.0.10",
+    "react-icons": "^2.2.5",
+    "sass-loader": "^6.0.6",
+    "style-loader": "0.18.2",
+    "jest": "20.0.4"
+  },
+  "devDependencies": {
+    "enzyme": "2.9.1",
+    "enzyme-to-json": "1.5.1",
+    "eslint": "4.5.0",
+    "eslint-config-airbnb": "15.1.0",
+    "jest-enzyme": "3.8.0",
+    "react-test-renderer": "^15.6.1"
   }
 }
