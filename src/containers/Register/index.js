@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import { white, indigo500, lightBlue400, lightBlue600, red600 } from 'material-ui/styles/colors'
+import { white, lightBlue400, lightBlue600, red600 } from 'material-ui/styles/colors'
 import TextField from 'material-ui/TextField'
 import SelectField from 'material-ui/SelectField'
 import MenuItem from 'material-ui/MenuItem'
@@ -51,10 +51,10 @@ class Register extends Component {
           id='name'
           name='name'
           floatingLabelText='Restaurant Name'
-          floatingLabelFixed={true}
           fullWidth={true}
-          floatingLabelStyle={{ color: indigo500 }}
-          underlineFocusStyle={{ color: indigo500 }}
+          floatingLabelFocusStyle={{ color: lightBlue400 }}
+          underlineFocusStyle={{ borderColor: lightBlue400 }}
+          underlineStyle={{ height: 0 }}
           errorStyle={{ textAlign: 'left', color: red600 }}
           onChange={this.onChange} />
         <TextField
@@ -63,10 +63,10 @@ class Register extends Component {
           name='email'
           floatingLabelText='Email'
           hintText='restaurant@name.com'
-          floatingLabelFixed={true}
           fullWidth={true}
-          floatingLabelStyle={{ color: indigo500 }}
-          underlineFocusStyle={{ color: indigo500 }}
+          floatingLabelFocusStyle={{ color: lightBlue400 }}
+          underlineFocusStyle={{ borderColor: lightBlue400 }}
+          underlineStyle={{ height: 0 }}
           errorStyle={{ textAlign: 'left', color: red600 }}
           onChange={this.onChange} />
         <TextField
@@ -75,10 +75,10 @@ class Register extends Component {
           name='phone'
           floatingLabelText='Phone'
           hintText='123-456-7890'
-          floatingLabelFixed={true}
           fullWidth={true}
-          floatingLabelStyle={{ color: indigo500 }}
-          underlineFocusStyle={{ color: indigo500 }}
+          floatingLabelFocusStyle={{ color: lightBlue400 }}
+          underlineFocusStyle={{ borderColor: lightBlue400 }}
+          underlineStyle={{ height: 0 }}
           errorStyle={{ textAlign: 'left', color: red600 }}
           onChange={this.onChange} />
         <TextField
@@ -86,10 +86,10 @@ class Register extends Component {
           id='address-1'
           name='address-1'
           floatingLabelText='Address 1'
-          floatingLabelFixed={true}
           fullWidth={true}
-          floatingLabelStyle={{ color: indigo500 }}
-          underlineFocusStyle={{ color: indigo500 }}
+          floatingLabelFocusStyle={{ color: lightBlue400 }}
+          underlineFocusStyle={{ borderColor: lightBlue400 }}
+          underlineStyle={{ height: 0 }}
           errorStyle={{ textAlign: 'left', color: red600 }}
           onChange={this.onChange} />
         <TextField
@@ -97,10 +97,10 @@ class Register extends Component {
           id='address-2'
           name='address-2'
           floatingLabelText='Address 2'
-          floatingLabelFixed={true}
           fullWidth={true}
-          floatingLabelStyle={{ color: indigo500 }}
-          underlineFocusStyle={{ color: indigo500 }}
+          floatingLabelFocusStyle={{ color: lightBlue400 }}
+          underlineFocusStyle={{ borderColor: lightBlue400 }}
+          underlineStyle={{ height: 0 }}
           errorStyle={{ textAlign: 'left', color: red600 }}
           onChange={this.onChange} />
         <TextField
@@ -108,19 +108,20 @@ class Register extends Component {
           id='city'
           name='city'
           floatingLabelText='City'
-          floatingLabelFixed={true}
           fullWidth={true}
-          floatingLabelStyle={{ color: indigo500 }}
-          underlineFocusStyle={{ color: indigo500 }}
+          floatingLabelFocusStyle={{ color: lightBlue400 }}
+          underlineFocusStyle={{ borderColor: lightBlue400 }}
+          underlineStyle={{ height: 0 }}
           errorStyle={{ textAlign: 'left', color: red600 }}
           onChange={this.onChange} />
         <SelectField
           id='state'
           name='state'
           floatingLabelText='State'
-          floatingLabelFixed={true}
           fullWidth={true}
-          floatingLabelStyle={{ color: indigo500 }}
+          floatingLabelFocusStyle={{ color: lightBlue400 }}
+          underlineFocusStyle={{ borderColor: lightBlue400 }}
+          underlineStyle={{ height: 0 }}
           value={state}
           onChange={(e, key, val) => this.onSelectChange(e, key, val)}>
           {this.renderStates()}
@@ -130,10 +131,10 @@ class Register extends Component {
           id='zipcode'
           name='zipcode'
           floatingLabelText='Zip Code'
-          floatingLabelFixed={true}
           fullWidth={true}
-          floatingLabelStyle={{ color: indigo500 }}
-          underlineFocusStyle={{ color: indigo500 }}
+          floatingLabelFocusStyle={{ color: lightBlue400 }}
+          underlineFocusStyle={{ borderColor: lightBlue400 }}
+          underlineStyle={{ height: 0 }}
           errorStyle={{ textAlign: 'left', color: red600 }}
           onChange={this.onChange} />
         <FlatButton

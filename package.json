@@ -4,7 +4,8 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js --env=jsdom --coverage"
+    "test": "node scripts/test.js --env=jsdom --coverage",
+    "eslint": "./node_modules/.bin/eslint src --ext .jsx --ext .js"
   },
   "dependencies": {
     "@codespec/react-toolset": "^0.0.33",
@@ -72,7 +73,11 @@
   },
   "jest": {
     "collectCoverageFrom": [
-      "src/**/*.{js,jsx}"
+      "src/**/*.{js,jsx}",
+      "!src/index.js",
+      "!src/reactStore.js",
+      "!src/registerServiceWorker.js",
+      "!src/reducers/index.js"
     ],
     "setupFiles": [
       "<rootDir>/config/polyfills.js",

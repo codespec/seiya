@@ -7,7 +7,7 @@ import injectTapEventPlugin from 'react-tap-event-plugin'
 import registerServiceWorker from './registerServiceWorker'
 import configureSotre from './reactStore'
 
-import './index.css'
+import './index.scss'
 
 import App from './containers/App'
 import Home from './containers/Home'
