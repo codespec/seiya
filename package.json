@@ -4,8 +4,9 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js --env=jsdom --coverage",
-    "eslint": "./node_modules/.bin/eslint src --ext .jsx --ext .js"
+    "test": "npm run test:lint && npm run test:unit -- -u",
+    "test:lint": "./node_modules/.bin/eslint src --ext .jsx --ext .js",
+    "test:unit": "node scripts/test.js --env=jsdom --coverage"
   },
   "dependencies": {
     "@codespec/react-toolset": "^0.0.33",
@@ -20,7 +21,6 @@
     "classnames": "^2.2.5",
     "css-loader": "0.28.4",
     "dotenv": "4.0.0",
-    "eslint": "4.4.1",
     "eslint-config-react-app": "^2.0.0",
     "eslint-loader": "1.9.0",
     "eslint-plugin-flowtype": "2.35.0",
@@ -66,7 +66,7 @@
     "babel-preset-stage-0": "^6.24.1",
     "enzyme": "2.9.1",
     "enzyme-to-json": "1.5.1",
-    "eslint": "4.5.0",
+    "eslint": "^4.6.1",
     "eslint-config-airbnb": "15.1.0",
     "jest-enzyme": "3.8.0",
     "react-test-renderer": "^15.6.1"
