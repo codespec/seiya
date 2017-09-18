@@ -1,0 +1,8 @@
+@import '../../scss/base';
+
+.App__content {
+  margin-top: 64px;
+  min-height: 500px;
+  background-color: $color-white;
+  padding: (5 * $unit) 0;
+}

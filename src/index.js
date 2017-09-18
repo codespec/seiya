@@ -1,7 +1,7 @@
 import React from 'react'
 import { render } from 'react-dom'
 import { Provider } from 'react-redux'
-import { Route, Switch} from 'react-router'
+import { Route, Switch } from 'react-router'
 import { BrowserRouter } from 'react-router-dom'
 import injectTapEventPlugin from 'react-tap-event-plugin'
 import registerServiceWorker from './registerServiceWorker'
@@ -9,7 +9,7 @@ import configureSotre from './reactStore'
 
 import './index.scss'
 
-import App from './containers/App'
+import App from './components/App'
 import Home from './containers/Home'
 import Register from './containers/Register'
 

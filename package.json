@@ -69,7 +69,8 @@
     "eslint": "^4.6.1",
     "eslint-config-airbnb": "15.1.0",
     "jest-enzyme": "3.8.0",
-    "react-test-renderer": "^15.6.1"
+    "react-test-renderer": "^15.6.1",
+    "sinon": "^3.2.1"
   },
   "jest": {
     "collectCoverageFrom": [
@@ -131,5 +132,6 @@
   },
   "eslintConfig": {
     "extends": "react-app"
-  }
+  },
+  "license": "UNLICENSED"
 }

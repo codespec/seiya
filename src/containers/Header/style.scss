@@ -1,0 +1,13 @@
+@import '../../scss/base';
+
+.Header__brand {
+  color: $color-white;
+
+  &:visited,
+  &:visited:hover,
+  &:visited:focus,
+  &:hover,
+  &:focus {
+    color: $color-white;
+  }
+}
