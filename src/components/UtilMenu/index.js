@@ -36,7 +36,7 @@ export class UtilMenu extends Component {
             }
             targetOrigin={{ horizontal: 'right', vertical: 'top' }}
             anchorOrigin={{ horizontal: 'right', vertical: 'top' }}
-            touchTapCloseDelay={0}
+            touchTapCloseDelay={1}
           >
             { isLogged && <MenuItem
               primaryText='Sign Out'
